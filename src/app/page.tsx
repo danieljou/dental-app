@@ -12,12 +12,14 @@ import BlogSection from "@/components/BlogSection";
 import PricingSection from "@/components/PricingSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import InstallPrompt from "./InstallPrompt";
 
 
 const HomePage: React.FC = () => {
   return (
 
     <div className="bg-white dark:bg-dark text-text-primary dark:text-white font-sans antialiased overflow-x-hidden">
+      <InstallPrompt  />
       <Navigation />
       <HeroSection2 />
       <ServicesSection />

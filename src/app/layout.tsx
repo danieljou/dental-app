@@ -24,12 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}> 
       <head>
-        <Script
-          src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-          strategy="afterInteractive"
-        />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#4f8cff" />
+        <link rel="icon" href="/icon.png" />
       </head>
       <body>
         {children}
